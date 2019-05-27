@@ -1,5 +1,6 @@
 type Query {
     bookById(id: ID): [Book]
+    mostPopularBooks(count: Int): [Book]
 }
 
 type Book {
@@ -8,6 +9,7 @@ type Book {
     pageCount: Int
     author: Author
     prevBook: Book
+    popularity: Int
 }
 
 type Author {

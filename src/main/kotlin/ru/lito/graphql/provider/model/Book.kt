@@ -12,8 +12,8 @@ data class Book(
     val id: String,
     val name: String,
     val pageCount: Int,
+    val author: String,
     @OneToOne
-    val author: Author,
-    @OneToOne
-    val prevBook: Book? = null
+    val prevBook: Book? = null,
+    val popularity: Int
 )
